@@ -11,7 +11,7 @@ export default function Team() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Team — Taskify";
+    document.title = "Team — Team Task Manager";
     load();
   }, []);
 

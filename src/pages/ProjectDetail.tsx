@@ -56,7 +56,7 @@ export default function ProjectDetail() {
     try {
       const data = await apiFetch(`/projects/${id}`);
       setProject(data);
-      document.title = `${data.name} — Taskify`;
+      document.title = `${data.name} — Team Task Manager`;
     } catch (e: any) {
       toast.error(e.message || "Failed to load project");
       navigate("/projects");

@@ -9,7 +9,7 @@ export default function Reports() {
   const [projects, setProjects] = useState<any[]>([]);
 
   useEffect(() => {
-    document.title = "Reports — Taskify";
+    document.title = "Reports — Team Task Manager";
     load();
   }, []);
 

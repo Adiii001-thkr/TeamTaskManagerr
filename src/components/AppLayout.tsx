@@ -12,7 +12,7 @@ export default function AppLayout() {
           <header className="h-14 flex items-center justify-between border-b bg-card/60 backdrop-blur px-4 sticky top-0 z-30">
             <div className="flex items-center gap-2">
               <SidebarTrigger />
-              <h1 className="text-sm font-medium text-muted-foreground hidden md:block">Workspace</h1>
+              <h1 className="text-sm font-medium text-muted-foreground hidden md:block">Team Task Manager</h1>
             </div>
             <div className="flex items-center gap-2">
               <UserMenu />

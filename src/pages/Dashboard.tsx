@@ -68,7 +68,7 @@ export default function Dashboard() {
   const [calYear] = useState(today.getFullYear());
 
   useEffect(() => {
-    document.title = "Dashboard — Taskify";
+    document.title = "Dashboard — Team Task Manager";
     apiFetch("/dashboard")
       .then(setStats)
       .catch(console.error)

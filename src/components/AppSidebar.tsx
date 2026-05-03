@@ -28,8 +28,8 @@ export function AppSidebar() {
           </div>
           {!collapsed && (
             <div className="flex flex-col">
-              <span className="text-sm font-semibold tracking-tight">Taskify</span>
-              <span className="text-xs text-muted-foreground">Team workspace</span>
+              <span className="text-sm font-semibold tracking-tight">Team Task Manager</span>
+              <span className="text-[10px] text-muted-foreground truncate" title="Manage your team and tasks efficiently">Manage your team and tasks efficiently</span>
             </div>
           )}
         </div>

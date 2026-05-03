@@ -37,7 +37,7 @@ export default function Auth() {
   const [signupPassword, setSignupPassword] = useState("");
 
   useEffect(() => {
-    document.title = `${role} Sign In — Taskify`;
+    document.title = `${role} Sign In — Team Task Manager`;
   }, [role]);
 
   if (loading) return null;
@@ -125,7 +125,7 @@ export default function Auth() {
           <div className="h-10 w-10 rounded-xl bg-white/15 backdrop-blur flex items-center justify-center">
             <CheckSquare className="h-5 w-5" />
           </div>
-          <span className="text-lg font-semibold">Taskify</span>
+          <span className="text-lg font-semibold">Team Task Manager</span>
         </div>
 
         {/* Main content */}
@@ -162,7 +162,7 @@ export default function Auth() {
           </div>
         </div>
 
-        <p className="text-sm text-white/60 relative z-10">© {new Date().getFullYear()} Taskify</p>
+        <p className="text-sm text-white/60 relative z-10">© {new Date().getFullYear()} Team Task Manager</p>
       </div>
 
       {/* ── Right Panel ── */}

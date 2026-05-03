@@ -71,7 +71,7 @@ export default function Projects() {
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
-    document.title = "Projects — Taskify";
+    document.title = "Projects — Team Task Manager";
     load();
   }, []);
 

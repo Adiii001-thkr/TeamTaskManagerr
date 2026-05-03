@@ -48,7 +48,7 @@ export default function Tasks() {
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 5 } }));
 
   useEffect(() => {
-    document.title = "Tasks — Taskify";
+    document.title = "Tasks — Team Task Manager";
     load();
   }, []);
 

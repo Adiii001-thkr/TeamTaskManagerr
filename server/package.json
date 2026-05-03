@@ -1,7 +1,7 @@
 {
-  "name": "taskify-backend",
+  "name": "team-task-manager-backend",
   "version": "1.0.0",
-  "description": "Express backend for Taskify with MongoDB",
+  "description": "Express backend for Team Task Manager with MongoDB",
   "main": "server.js",
   "type": "module",
   "scripts": {

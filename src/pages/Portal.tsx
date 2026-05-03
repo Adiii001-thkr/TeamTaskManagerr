@@ -38,7 +38,7 @@ export default function Portal() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Welcome — Taskify";
+    document.title = "Welcome — Team Task Manager";
   }, []);
 
   if (loading) return null;
@@ -60,7 +60,7 @@ export default function Portal() {
           <div className="h-9 w-9 rounded-xl gradient-primary flex items-center justify-center shadow-glow">
             <CheckSquare className="h-5 w-5 text-white" />
           </div>
-          <span className="text-xl font-bold tracking-tight">Taskify</span>
+          <span className="text-xl font-bold tracking-tight">Team Task Manager</span>
         </div>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <span>Already have an account?</span>
@@ -87,7 +87,7 @@ export default function Portal() {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto">
-            Taskify gives Admins full control and Members focused task access. Select your role to get started.
+            Manage your team and tasks efficiently. Select your role to get started.
           </p>
         </div>
 
@@ -194,7 +194,7 @@ export default function Portal() {
 
         {/* ── Footer ── */}
         <p className="text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Taskify · Built with MongoDB, Express, React & Node.js
+          © {new Date().getFullYear()} Team Task Manager · Built with MongoDB, Express, React & Node.js
         </p>
       </main>
     </div>

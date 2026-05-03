@@ -6,7 +6,7 @@ let mongoServer = null;
 const connectDB = async () => {
   try {
     // Try real MongoDB first (for production / Atlas / local install)
-    if (process.env.MONGO_URI && process.env.MONGO_URI !== "mongodb://localhost:27017/taskify_db") {
+    if (process.env.MONGO_URI && process.env.MONGO_URI !== "mongodb://localhost:27017/team_task_manager_db") {
       const conn = await mongoose.connect(process.env.MONGO_URI);
       console.log(`MongoDB Connected: ${conn.connection.host}`);
       return;
@@ -14,7 +14,7 @@ const connectDB = async () => {
 
     // Try local MongoDB
     try {
-      const conn = await mongoose.connect(process.env.MONGO_URI || "mongodb://localhost:27017/taskify_db", {
+      const conn = await mongoose.connect(process.env.MONGO_URI || "mongodb://localhost:27017/team_task_manager_db", {
         serverSelectionTimeoutMS: 3000,
       });
       console.log(`MongoDB Connected: ${conn.connection.host}`);
